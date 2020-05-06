@@ -1,1 +1,37 @@
 <h1>Characters</h1>
+
+<div class="row">
+    <?php
+    if($characters):
+        foreach($characters as $character):
+    ?>
+    <div class="col s12 m4">
+        <div class="card hoverable">
+            <div class="card-image">
+                <img src="<?php echo $character->image;?>" alt="<?php echo $character->name;?>">
+                <span class="card-title bg-black-transparent"><?php echo $character->name;?></span>
+            </div>
+            <div class="card-content">
+                <div>
+                    <strong>Status:</strong> <?php echo $character->status;?>
+                </div>
+                <div>
+                    <strong>Gender:</strong> <?php echo $character->gender;?>
+                </div>
+                <div>
+                    <strong>Species:</strong> <?php echo $character->species;?>
+                </div>
+                <div>
+                    <strong>Type:</strong> <?php echo $character->type;?>
+                </div>
+            </div>
+            <div class="card-action">
+                <a href="#">This is a link</a>
+            </div>
+       </div><!--./card-->
+    </div><!--./col-->
+    <?php
+        endforeach;
+    endif;
+    ?>
+</div><!--./row-->
