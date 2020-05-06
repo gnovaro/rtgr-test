@@ -1,0 +1,14 @@
+{
+    "name": "gnovaro/rtgr-test",
+    "description": "RTGR TEST PHALCON PHP APP",
+    "type": "project",
+    "require-dev": {
+        "phalcon/devtools": "^4.0"
+    },
+    "authors": [
+        {
+            "name": "Gustavo Novaro"
+        }
+    ],
+    "require": {}
+}
