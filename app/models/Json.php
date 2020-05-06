@@ -1,7 +1,5 @@
 <?php
 
-namespace Rtgr\Models;
-
 class Json
 {
     //base url
@@ -13,8 +11,6 @@ class Json
      */
     protected function parse()
     {
-        echo 'parse';
-        die;
         $content = \file_get_contents($this->_url);
         return \json_decode($content);
     }
